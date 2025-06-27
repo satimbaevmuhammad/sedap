@@ -28,3 +28,8 @@ app.listen(PORT, () => console.log(`Server ${PORT}-portda ishlayapti`));
 
 const orderRoutes = require('./routes/orderRoutes');
 app.use('/api/orders', orderRoutes);
+
+
+const analyticsRoutes = require('./routes/analyticsRoutes');
+app.use('/api/analytics', analyticsRoutes);
+
