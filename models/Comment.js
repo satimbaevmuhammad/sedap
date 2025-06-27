@@ -11,7 +11,8 @@ const commentSchema = new mongoose.Schema({
     avatar: String
   },
   ball: String,
-  date: String
+  date: String,
+  user_id: { type: mongoose.Schema.Types.ObjectId, ref: 'User' }  // <-- Add this line
 });
 
 module.exports = mongoose.model('Comment', commentSchema);
