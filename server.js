@@ -33,3 +33,5 @@ app.use('/api/orders', orderRoutes);
 const analyticsRoutes = require('./routes/analyticsRoutes');
 app.use('/api/analytics', analyticsRoutes);
 
+const customerRoutes = require('./routes/customerRoutes');
+app.use('/api/customers', customerRoutes);
