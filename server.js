@@ -35,3 +35,6 @@ app.use('/api/analytics', analyticsRoutes);
 
 const customerRoutes = require('./routes/customerRoutes');
 app.use('/api/customers', customerRoutes);
+
+const eventRoutes = require('./routes/eventRoutes');
+app.use('/api/events', eventRoutes);
